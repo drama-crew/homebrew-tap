@@ -5,21 +5,21 @@
 class DramaCli < Formula
   desc "Drama platform CLI — manage projects, artifacts, workflows, and AI generation jobs from the command line. Single static binary, no runtime required."
   homepage "https://github.com/drama-crew/drama-platform"
-  version "drama-cli-v0.3.2"
+  version "drama-cli-v0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.3.2/drama-cli_0.3.2_darwin_amd64.tar.gz"
-      sha256 "6d286621e4c21ade1917dc34bd893791e2445221813e4f0b3939eddc7ac71101"
+      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.4.0/drama-cli_0.4.0_darwin_amd64.tar.gz"
+      sha256 "f58255bba938a9fe7877fd400469831cb9198370809663061bfb20a87e5d5993"
 
       define_method(:install) do
         bin.install "drama-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.3.2/drama-cli_0.3.2_darwin_arm64.tar.gz"
-      sha256 "e5bb8445963dbab34254ab88b92276f569580a2d0ecbf421168215af22ad0384"
+      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.4.0/drama-cli_0.4.0_darwin_arm64.tar.gz"
+      sha256 "ec9d63df405269e84b6e5422e7ce395cf38b7b40461dac5c21c0014170ff5a1c"
 
       define_method(:install) do
         bin.install "drama-cli"
@@ -29,15 +29,15 @@ class DramaCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.3.2/drama-cli_0.3.2_linux_amd64.tar.gz"
-      sha256 "7d60bf815c8575343de88cb6ec4317e826fb6cb9893fea2df8253f624060812b"
+      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.4.0/drama-cli_0.4.0_linux_amd64.tar.gz"
+      sha256 "746c9de0ca0f214aac23d083f42b30e5d6bf27f371e715871186252bf7060db2"
       define_method(:install) do
         bin.install "drama-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.3.2/drama-cli_0.3.2_linux_arm64.tar.gz"
-      sha256 "26bedda6e0c8b9d58bbdb062d7323a74b70b9cb933a8374ff7ad8e2a76377945"
+      url "https://github.com/drama-crew/drama-cli/releases/download/drama-cli-v0.4.0/drama-cli_0.4.0_linux_arm64.tar.gz"
+      sha256 "0f06b22a6670786134269e4a04182fff3dfd9591b77ad437a2aa48692b3e114d"
       define_method(:install) do
         bin.install "drama-cli"
       end
